@@ -74,7 +74,7 @@ Risk score: **100/100** (12 findings)
 
 ## Fix the #1 finding for free
 
-The most common high-severity finding is "no alert when a lead goes unanswered". The free **n8n missed-lead heartbeat** template checks your sheet or CRM every 5 minutes and pings Slack, Discord or any webhook when a lead waits past your SLA. <!-- TODO: link the template once it is published on n8n.io -->
+The most common high-severity finding is "no alert when a lead goes unanswered". The free **n8n missed-lead heartbeat** template (https://github.com/paopao-studio-ai/n8n-missed-lead-heartbeat) checks your sheet or CRM every 5 minutes and pings Slack, Discord or any webhook when a lead waits past your SLA.
 
 ## Want a human to map it?
 
