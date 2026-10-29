@@ -25,6 +25,10 @@ git clone https://github.com/paopao-studio-ai/lead-leak-check-mcp && cd lead-lea
 pip install .            # Python 3.10+, works with mcp 1.x and 2.x
 ```
 
+### One-click bundle (MCPB)
+
+Download `lead-leak-check-mcp-0.1.0.mcpb` from the [latest release](https://github.com/paopao-studio-ai/lead-leak-check-mcp/releases/latest) and open it in Claude Desktop (or any MCPB-aware client). Needs [uv](https://docs.astral.sh/uv/); dependencies install automatically.
+
 ### Claude Desktop / Cursor / any MCP client
 
 ```json

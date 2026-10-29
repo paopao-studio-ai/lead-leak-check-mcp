@@ -1,0 +1,35 @@
+{
+  "manifest_version": "0.4",
+  "name": "lead-leak-check-mcp",
+  "display_name": "Lead Leak Check",
+  "version": "0.1.0",
+  "description": "Find where inbound leads are silently dropped in Zapier, Make and n8n pipelines.",
+  "long_description": "Turns a description of your lead pipeline (or a run-history CSV) into a ranked list of lead-leak risks, each with a concrete fix. Runs fully offline: no network calls, no data leaves your machine.",
+  "author": {
+    "name": "Paopao Studio",
+    "email": "paopaomusic@mail.grokbot.com",
+    "url": "https://paopao-studio.pages.dev"
+  },
+  "repository": { "type": "git", "url": "https://github.com/paopao-studio-ai/lead-leak-check-mcp.git" },
+  "homepage": "https://paopao-studio.pages.dev",
+  "support": "https://github.com/paopao-studio-ai/lead-leak-check-mcp/issues",
+  "server": {
+    "type": "uv",
+    "entry_point": "src/lead_leak_check/server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": ["run", "--directory", "${__dirname}", "lead-leak-check-mcp"]
+    }
+  },
+  "tools": [
+    { "name": "check_pipeline", "description": "Check a structured lead-pipeline config and return a ranked leak-risk list." },
+    { "name": "check_pipeline_description", "description": "Check a plain-English description of a lead pipeline." },
+    { "name": "analyze_run_history", "description": "Analyze a Zapier/Make/n8n run-history CSV for failed, filtered and missing runs." }
+  ],
+  "compatibility": {
+    "platforms": ["darwin", "linux", "win32"],
+    "runtimes": { "python": ">=3.10" }
+  },
+  "keywords": ["mcp", "leads", "zapier", "make", "n8n", "crm", "automation-audit"],
+  "license": "MIT"
+}

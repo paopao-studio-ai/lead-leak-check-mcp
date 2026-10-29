@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.paopao-studio-ai/lead-leak-check",
+  "title": "Lead Leak Check",
+  "description": "Finds where inbound leads are silently dropped in Zapier, Make and n8n pipelines. Offline.",
+  "websiteUrl": "https://paopao-studio.pages.dev",
+  "repository": {
+    "url": "https://github.com/paopao-studio-ai/lead-leak-check-mcp",
+    "source": "github",
+    "id": "1438235438"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/paopao-studio-ai/lead-leak-check-mcp/releases/download/v0.1.0/lead-leak-check-mcp-0.1.0.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "d6290c5f21983907ae1a7a0f3fd741a45da6515b7a6cb9ecba12213dfa3ec889",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
