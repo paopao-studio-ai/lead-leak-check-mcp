@@ -85,3 +85,9 @@ def test_history():
 def test_history_requires_status_column():
     with pytest.raises(ValueError, match="status"):
         analyze_history("a,b\n1,2\n")
+
+
+def test_nobody_works_on_weekends_is_after_hours_gap():
+    from lead_leak_check.rules import config_from_text
+    for t in ("Nobody works on weekends.", "No one answers at night.", "No after-hours cover."):
+        assert config_from_text(t)["routing"]["after_hours_coverage"] is False
